@@ -35,7 +35,7 @@ def load_checkpoint(checkpoint_path):
 
 # %%
 # Set the path to your checkpoint
-checkpoint_path = '../checkpoints/best_model_YYYYMMDD_HHMMSS.pth'  # Update this
+checkpoint_path = '../checkpoints/best_model_20250504_164143.pth'  # Latest model
 model, config = load_checkpoint(checkpoint_path)
 
 # Setup device
