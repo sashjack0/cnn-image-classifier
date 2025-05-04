@@ -1,0 +1,26 @@
+{
+    "training": {
+        "epochs": 100,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "weight_decay": 5e-4,
+        "early_stopping_patience": 10,
+        "use_amp": true
+    },
+    "model": {
+        "name": "ImprovedCNN",
+        "size": "medium",
+        "input_channels": 3,
+        "dropout_rate": 0.5
+    },
+    "data": {
+        "dataset": "cifar10",
+        "data_dir": "./data",
+        "val_split": 0.1,
+        "num_workers": 4
+    },
+    "logging": {
+        "save_dir": "./checkpoints",
+        "log_interval": 100
+    }
+} 
